@@ -1,0 +1,32 @@
+# Python envs
+.venv/
+venv/
+
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local env/secrets
+.env
+.env.*
+!.env.example
+
+# Runtime/logs
+*.log
+
+# Notebook/temp
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Internal local git dir
+.repo_git/

@@ -1,0 +1,1 @@
+["make", "model", "year", "car_age", "mileage_km", "mileage_per_year", "engine_cc", "engine_class", "fuel_type", "transmission", "body_type", "drive_type", "source_platform", "is_suv", "is_van", "is_hatchback", "make_model"]
