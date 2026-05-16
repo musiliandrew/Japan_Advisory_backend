@@ -10,6 +10,9 @@ FastAPI ML backend for Japan -> Kenya import decisioning.
 - Serves dashboard and vehicle search payloads to frontend.
 - Uses live USD/KES exchange rates from online providers (with cache/fallback).
 
+  <img width="1920" height="1818" alt="image" src="https://github.com/user-attachments/assets/5c846a43-e1a2-42e6-afda-9be15630c58c" />
+
+
 ## Tech stack
 
 - FastAPI
