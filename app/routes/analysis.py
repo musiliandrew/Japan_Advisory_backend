@@ -16,6 +16,7 @@ def vehicles_endpoint(
     page_size: int = Query(default=50, ge=1, le=200),
     source: str | None = Query(default=None),
     profitable_only: bool = Query(default=False),
+    q: str | None = Query(default=None),
     sort_by: str = Query(default='scraped_at'),
     sort_dir: str = Query(default='desc'),
 ) -> dict:
@@ -24,6 +25,7 @@ def vehicles_endpoint(
         page_size=page_size,
         source=source,
         profitable_only=profitable_only,
+        q=q,
         sort_by=sort_by,
         sort_dir=sort_dir,
     )

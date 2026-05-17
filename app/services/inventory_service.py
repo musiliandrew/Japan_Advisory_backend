@@ -185,10 +185,15 @@ def get_vehicles(
     page_size: int = 50,
     source: str | None = None,
     profitable_only: bool = False,
+    q: str | None = None,
     sort_by: str = 'scraped_at',
     sort_dir: str = 'desc',
 ) -> dict:
     vehicles = _cached_all_vehicles()
+
+    if q:
+        term = q.lower().strip()
+        vehicles = [v for v in vehicles if term in v['make'].lower() or term in v['model'].lower()]
 
     if source:
         vehicles = [v for v in vehicles if v['source'].lower() == source.lower()]
